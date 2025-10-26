@@ -2,5 +2,141 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Inter", serif;
+    
+}
+
+header {
+    padding: 10px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 72px;
+    font-family: "Tulpen One", sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+}
+
+body.home {
+    background-image: url(./assets/bghome.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+main {
+    background-color: rgba(0, 0, 0, 0.493);
+    margin: 0 auto;
+    max-width: 1200px;
+    color: rgb(201, 201, 201);
+    text-align: justify;
+    padding: 5px 20px;
+}
+
+.namedate p {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 10px 0;
+    color: white;
+}
+
+.namedate img {
+    border-radius: 50%;
+}
+
+#name {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.intro {
+    text-align: center;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: black;
+}
+
+main h2 {
+    text-align: center;
+    color: white;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+    padding: 2px;
+    transition: background-color 0.3s ease;
+    border-radius: 30%;
+}
+
+main a:hover {
+    background-color: white;
+    color: black;
+}
+
+.bottomtext img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 19%;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 40px 20px;
+}
+
+footer h2 {
+    font-family: "Tulpen One", sans-serif;
+    font-size: 72px;
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.card {
+    flex: 1 1 250px;
+    max-width: 300px;
+    background-color: rgba(255,255,255,0.05);
+    color:white;
+    text-align: center;
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.5s ease, background-color 1s ease;
+}
+
+.card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin: 0 auto 10px;
+    display: block;
+}
+
+.card:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    transform: translateY(-5px);
+}
+
+html, body {
+    overflow-x: hidden;
 }
