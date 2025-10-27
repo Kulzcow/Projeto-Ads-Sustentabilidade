@@ -6,13 +6,36 @@
 }
 
 header {
-    padding: 10px;
     background-color: black;
     text-align: center;
     color: white;
-    font-size: 72px;
     font-family: "Tulpen One", sans-serif;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
+
+header h1 {
+    font-size: 72px;
+    margin: 0;
+    line-height: 1;
+    padding-bottom: 32px;
+}
+
+header a {
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+    font-size: 32px;
+    display: inline-block;
+    margin-bottom: 0;
+    padding-top: 32px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+header a:hover {
+    color: white;
+    text-shadow: 0 0 30px white, 0 0 20px white;
+}
+
 
 body {
     margin: 0;
@@ -26,6 +49,41 @@ body.home {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
+}
+
+body.consumo {
+        background-image: url(./assets/bgconsumo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+body.descarte {
+    background-image: url(./assets/bgdescarte.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+body.energia {
+    background-image: url(./assets/bgeconomia.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+body.reciclagem {
+        background-image: url(./assets/bgreciclagem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+
+body.descarte h3, p {
+    text-align: center;
 }
 
 main {
